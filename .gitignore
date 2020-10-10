@@ -1,0 +1,8 @@
+latex/**/*.aux
+latex/**/*.log
+latex/**/*.out
+latex/**/*.fdb_latexmk
+latex/**/*.fls
+latex/**/*.pdv
+latex/**/*.synctex.gz
+
