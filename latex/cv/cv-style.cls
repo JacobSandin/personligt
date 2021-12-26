@@ -162,21 +162,35 @@
 % List environment %
 %----------------------------------------------------------------------------------------
 
-\setlength{\tabcolsep}{0pt}
+%\setlength{\tabcolsep}{0pt}
+%\newenvironment{entrylist}{%
+%  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+%}{%
+%  \end{tabular*}
+%}
+%\renewcommand{\bfseries}{\headingfont\color{headercolor}}
+%\newcommand{\entry}[4]{%
+%  #1&\parbox[t]{12.8cm}{%
+%    \textbf{#2}%
+%    \hfill%
+%    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+%    #4\vspace{\parsep}%
+%  }\\}
+%------------
+\usepackage{enumitem}
 \newenvironment{entrylist}{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \begin{itemize}[leftmargin=1in]%[leftmargin=*,align=left,itemindent=-\dimexpr\labelwidth+\labelindent+\labelsep\relax]
 }{%
-  \end{tabular*}
+  \end{itemize}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  #1&\parbox[t]{12.8cm}{%
+  \item[#1]
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
     #4\vspace{\parsep}%
-  }\\}
-
+  }
 %----------------------------------------------------------------------------------------
 % Side block %
 %----------------------------------------------------------------------------------------
@@ -205,7 +219,7 @@
 \RequirePackage[left=5.6cm,top=1cm,right=1cm,bottom=1cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
-    pdftitle=CV/Resume \textbar{} Alejandro Pérez Londoño,
-    pdfauthor=Alejandro Pérez Londoño,
+    pdftitle=CV/Resume \textbar{} Jacob Sandin,
+    pdfauthor=Jacob Sandin,
     pdfsubject=CV/Resume%
     }

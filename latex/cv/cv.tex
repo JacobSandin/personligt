@@ -4,7 +4,7 @@
                                     % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
 
 \sethyphenation[variant=british]{english}{} % Add words between the {} to avoid them to be cut 
-
+\usepackage{pifont}
 \begin{document}
 
 \header{Jacob}{Sandin}           % Your name
@@ -16,23 +16,23 @@
 
 \begin{aside}
 %
-\section{contact}
+\section{kontakt}
 Hemmeslövsvägen 40
 269 96 Båstad
-Sweden
+Sverige
 ~
 +46 (0)76 208 33 94
 ~
 jacob@js.se
 %
-\section{languages}
+\section{språk}
 Svenska modersmål
 Engelska flytande
 Latin skoj men glömt
 %
 \section{programming}
-{\color{red} $\varheartsuit$} Pascal, {\color{red} $\varheartsuit$} Rust, Java, C\#, SQL, Bash, Ansible
-\LaTeX{}
+{\color{red} $\varheartsuit$} Pascal, {\color{red} $\heartsuit$} Rust, Java, C\#, SQL, Bash, {\color{orange} \ding{72}}Ansible
+\LaTeX{}, mm.
 %
 \end{aside}
 
@@ -40,74 +40,117 @@ Latin skoj men glömt
 %	SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{skills}
+\section{färdighet}
   \vspace{-0.2cm}
 
-  Linux, Windows, Programming, System management, Shell, Vim, Support, Management, System planning
-
+  Linux, Windows, Programmering, System management, Shell, Vim, Support, Management, System planering
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{experience}
+\section{erfarenhet}
 
 \begin{entrylist}
 %------------------------------------------------
 \entry
   {2020--Now}
   {imCode Partner AB}
-  {Visby, Sweden}
-  {\jobtitle{System ingineer}\\
-  A description of what I do!}
+  {Visby, Sverige}
+  {\jobtitle{System utvecklare}\\
+  Jag är medansvarig för systemen hos imCode, och även till viss del i
+  kundkontakter. Kanske här med de lite mer tekniska delarna.
+  
+ %   Arbetsuppgifter:
+ % \begin{itemize}
+ %   \item Systemutveckling
+ %   \item Virtualisering av våra egna och kundmiljöer.
+ %   \item Automatisering av system, mestadels med Ansible,
+ %   \item Installationer av ny och känd mjukvara.
+ %   \item Guidning och testning åt andra utvecklare.
+ %   \item Driftövervakning av egna och kundsystem.
+ %   \item Kundsupport gällande mer tekniska frågor.
+ %   \item Internsupport gällande tekniska planeringar och frågor.
+ %   \item ...
+ %   \item (detta var några av mina uppgifter.)
+
+ % \end{itemize}
+  }
 %------------------------------------------------
 \entry
-  {2010-2020}
+  {2009-2020}
   {Cefit AB}
-  {Båstad, Sweden}
-  {\jobtitle{Owner}\\
-    Jag ville testa hur det var att ha ett eget företag, då båda
-    mina föräldrar vart entreprenörer. Till att börja med var detta inte
-    heller något problem alls och jag gjorde goda inkomster, fick bra 
-    kunder, professionella relationer och kontaktnät.\\
+  {Båstad, Sverige}
+  {\jobtitle{Ägare}\\
+      I Cefit AB (Centrum för effektiv IT) så jobbade jag mestadels som 
+      ISP (Internettjänster) och ASP (Applikations tjänster). Exempelvis
+      brandväggs tjänster, serverhotell och tekniskt stöd.
 
-    Även här tog dock livet över efter ett tag, då vi råkade ut för riktigt
-    svåra händelser jag och min familj. Vilket blev en nedåtgående spiral
-    som jag inte vill gå närmare in på här, men det yttrade sig i utbrändhet.\\
-    
-    Jag tappade helt intresset för allt, vilket till slut gjorde att jag
-    valde, att titta på nya vägar framåt. Jag sålde av största delen av 
-    min verksamhet och tog ett sabbatsår.\\
-
-    Detailed achievements:
-  \begin{itemize}
-    \item Achievement 1. Achievement 1. Achievement 1. 
-    \item Achievement 2. Achievement 2. Achievement 2. Achievement 2. Achievement 2. Achievement 2.
-    \item Achievement 3. Achievement 3. Achievement 3. Achievement 3.  
-  \end{itemize}}\\
+      Större delen av mina kunder var erfarna förmedlare av ovan tjänster
+      själva, inom kommun, landsting och företag. Ofta datoravdelningar 
+      här som behövde hjälp med de mer tekniska lösningar och funktioner.
+      
+%    Arbetsuppgifter:
+%  \begin{itemize}
+%    \item Achievement 1. Achievement 1. Achievement 1. 
+%    \item Achievement 2. Achievement 2. Achievement 2. Achievement 2. Achievement 2. Achievement 2.
+%    \item Achievement 3. Achievement 3. Achievement 3. Achievement 3.  
+%  \end{itemize}}\\
+}   
 %------------------------------------------------
 \entry
-  {2008--2011}
-  {Sverige.net / ItHalland (Media network AB)}
-  {Halmstad, Sweden}
-  {\jobtitle{Job Title}\\
-    Då jag fick barn valde jag att ta en paus från det hektiska liv det var 
-    att vara IT-chef och med det ansvar som man hade svårt att reglera. 
-    Jag märkte att jag inte hade tid att träffa mina barn annat än några
-    timmar på helgen, valde jag att avsluta min anställning och starta
-    eget eftersom detta innebar att jag kunde jobba hemifrån och styra
-    mera över min tid.\\
+  {1999--2011}
+  {Sverige.net / It-Halland (Media network AB)}
+  {Halmstad, Sverige}
+  {\jobtitle{IT Chef}\\
+    I mitt arbete här började jag som systemutvecklare och i supporten, och även delvis
+    som programmerare då man körde ett order/kund/fakturerings system som jag byggt 
+    åt Buller Data tidigare.
 
-  Detailed achievements:
-  \begin{itemize}
-    \item Achievement 1. Achievement 1. Achievement 1. Achievement 1. Achievement 1. Achievement 1. Achievement 1. Achievement 1. 
-  \end{itemize}} \\
+    Som it-chef och verksamhets chef för internet leverantörsbiten så utvecklade
+    jag denna verksamhet från en 100tkr verksamhet till en mångmiljonverksamhet.
+    Givetvis inte själv utan jag hade duktiga medarbetare och det låg mycket i
+    tiden så at säga. Samtidigt var det få som hade den kompetens jag hade.
+    Faktum var att de inte hittade någon annan när jag anställdes utan köpte
+    loss mig från en annan sysselsättning.
+
+    När jag slutade här var vi en av de största aktörerna i området. Samtidigt
+    som nybliven pappa upplevde jag att jag aldrig fick se mina barn.
+
+%    Arbetsuppgifter:
+%  \begin{itemize}
+%    \item Achievement 1. Achievement 1. Achievement 1. Achievement 1. Achievement 1. Achievement 1. Achievement 1. Achievement 1. 
+%  \end{itemize}
+} 
 %------------------------------------------------
 \entry
-  {2007--2008}
+  {1993--1999}
   {Buller Data AB}
-  {Båstad, Sweden}
+  {Båstad, Sverige}
   {\jobtitle{Job Title}\\
-  Job description. Job description. Job description. Job description. Job description. Job description. Job description. Job description. Job description. Job description.\\}
+    Buller data var en pionjär inom dator och IT i Sverige och det var en
+    oerhörd fördel för mig att få börja min IT karriär här och i denna 
+    miljö. En miljö av sann skaparglädje, man ville verkligen skapa något
+    nytt med den nya tekniken och de möjligheter denna gav. Jag fick här
+    tillgång till mentorer som var några av de skarpaste inom svensk utveckling
+    då. 
+
+    När jag började på Buller Data så började jag som praktikant på lagret (via 
+    arbetsförmedlingen). Jag blev samma år ansvarig för lagret, Buller Data var
+    då en av Sveriges största postorder företag för datordelar, CD och CD-rom.
+    Vi hade också en av världens största BBS:er med användare från hela världen,
+    där jag var administratör.
+
+    1993 startade vi med Internettjänster och var därmed en av de absolut första 
+    internetleverantörerna för internet via modem till privatpersoner i Sverige.
+    Jag var en av nyckelpersonerna i att utveckla denna verksamhet och det gav
+    mig också möjligheten att ta upp programmering igen.
+
+%    Arbetsuppgifter:
+%  \begin{itemize}
+%    \item Achievement 1. Achievement 1. Achievement 1. Achievement 1. Achievement 1. Achievement 1. Achievement 1. Achievement 1. 
+%  \end{itemize}
+}
+\pagebreak
 %------------------------------------------------
 
 \end{entrylist}
@@ -116,43 +159,64 @@ Latin skoj men glömt
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\section{education}
+\section{bakgrund}
+Jag är född i Malmö 1970 och har levt större delen av mitt liv i södra Sverige.
+Med undantag av några år i Uppsala, Halmstad och UAE (Förenade Arabemiraten).
 
+Vid sex års ålder fick jag cancer i mitt vänstra ben och vart amputerad. Detta
+innebär inga större problem för mig utan har nog bidragit till en målmedvetenhet
+och kanske envishet. Samtidigt undviker jag att stå långa tider eller att bära
+tunga saker längre sträckor.
+
+I 12-13 års åldern bodde jag i UAE, både ABU-Dhabi och Dubai, vilket har
+bidragit till en god förståelse för olika kulturer och öppenhet inför dessa.
+Samtidigt som min skolgång i Engelsktalande skolor bidrog till en väl utvecklad
+Engelska, även med tänkande i Engelska och flytande tal. Det senare kanske
+kräver lite exponering numer innan det kickar igång.
+
+Som barn var jag väldigt praktisk och jobbade extra på bil-verkstäder, skroten
+och billackeraren i hembyn. Intresset var nog mer hur saker funkar än just
+bilar. Samtidigt var det det som fans att tillgå.
+
+Önskan att förstå hur saker fungerade var också vad som fick mig att söka
+mig till lantbruk. Det var fritt, frisk luft och mycket "hur funkar det".
+Därför är detta den utbildning jag har i grunden och varför jag inte 
+dokumenterat utbildning.
+
+När det gäller datorer, är jag i princip helt självlärd även om jag haft
+tur med praktik och att få kontakt med duktiga människor och förebilder
+inom just datorer/IT. Min första dator var mina föräldrars dator de köpte
+för sin bokföring, en IBM PC 1982 ett år efter lanseringen i New York 1981.
+I strax efter vilket jag tog mina första stapplande steg med programmering,
+men blev allvar först som anställd på Buller Data långt senare.
+
+Jag har även kortare utbildningar och erfarenhet i Media samt verbal 
+kommunikation Klassiskt klarspråk (Noneviolent communication) även kallat
+Giraff-språket inom militären.
+
+Givetvis har jag många historier och detaljer, från ett långt och 
+händelserikt liv, men inte just här.
 \begin{entrylist}
 %------------------------------------------------
 \entry
-{2010--2011}
-{M.Sc. {\normalfont in Economics [Grade]}}
-{University}
-{\vspace{-0.3cm}}
+{1986--1988}
+{Lantbruks Skolan {\normalfont Husdjur, Bygg, Företagsekonomi, Maskin, Växtlära }}
+{Gymnasie}
+{\vspace{-0.80cm}}
 %------------------------------------------------
 \entry
-{2004--2009}
-{B.Eng. {\normalfont in Engineering Management [Grade]}}
-{University}
-{(Emphasis in ...)}
-%------------------------------------------------
-\end{entrylist}
-
-%----------------------------------------------------------------------------------------
-%	OTHER QUALIFICATIONS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{other qualifications}
-
-\begin{entrylist}
+{1990}
+{Media och Radio {\normalfont Journalistik, Radiopratare, Producering, 
+Ljudhantering}}
+{Gymnasie}
+{\vspace{-0.8cm}}
 %------------------------------------------------
 \entry
-{2013}
-{Qualification}
-{Institution}
-{\vspace{-0.3cm}}
-%------------------------------------------------
-\entry
-{2011}
-{Qualification}
-{Institution}
-{\vspace{-0.3cm}}
+{1990 -- }
+{Klassiskt klarspråk {\normalfont Detta är en ständigt pågående utbildning}}
+{Adito bildning AB}
+{Träningar någon gång per år.}
+{\vspace{-0.5cm}}
 %------------------------------------------------
 \end{entrylist}
 
@@ -160,26 +224,84 @@ Latin skoj men glömt
 %	AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{awards}
+\section{egenheter}
 
 \begin{entrylist}
 %------------------------------------------------
 \entry
-{2014}
-{Award name}
-{Institution}
-{Award description. Award description. Award description. Award description. Award description. Award description. Award description. }
+{\color{green} \ding{52}}
+{Fokuserad}
+{Envis}
+{Att vara fokuserad (eller envis) är något som är både bra och dåligt. En bra 
+sak är att man kan lösa väldigt komplexa problem om man bara har 
+möjligheten att fokusera. En mindre bra är att jag kan få svårt om jag har
+många störande moment.}
+{\vspace{-0.8cm}}
+%------------------------------------------------
+\entry
+{\color{green} \ding{52}}
+{Lösningsorienterad}
+{}
+{Jag funderade på att skriva kundorienterad, samtidigt så är det två sidor
+av samma mynt. Det är ändå för att kunderna skall bli de bästa de kan i sitt
+arbete som vi gör det mesta vi gör.}
+{\vspace{-0.4cm}}
+%------------------------------------------------
+\entry
+{\color{green} \ding{52}}
+{Ansvarsfull}
+{Ibland till överdrift}
+{Jag tycker verkligen inte om att lämna saker ogjort, eller att känna att någon
+väntar på mig att göra klart. Jag kan jobba dygnet runt för att inte hamna i
+den situationen, något som är problematiskt efter som man ofta får mer jobb då.
+Tills det blir för mycket, och man inte hinner med.}
+{\vspace{-0.4cm}}
+%------------------------------------------------
+\entry
+{\color{green} \ding{52}}
+{Självgående}
+{}
+{Jag har oftast lätt att se sådant som behövs ta hand om, behov i den
+egna organisationen såväl som hos kunder jag har kontakt med. Samtidigt
+får jag ofta förtroendet att ta hand om just sådant. Investeringar,
+dokumentation, planering.}
+{\vspace{-0.5cm}}
 %------------------------------------------------
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
+%	OTHER QUALIFICATIONS SECTION
+%----------------------------------------------------------------------------------------
+%
+%\section{education}
+%
+%\begin{entrylist}
+%%------------------------------------------------
+%\entry
+%{2013}
+%{Qualification}
+%{Institution}
+%{\vspace{-0.3cm}}
+%%------------------------------------------------
+%\entry
+%{2011}
+%{Qualification}
+%{Institution}
+%{\vspace{-0.3cm}}
+%%------------------------------------------------
+%\end{entrylist}
+
+%----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
-
 \section{interests}
   \vspace{-0.2cm}
 
-\textbf{professional:} professional interest 1, professional interest 2 and professional interest 3. \textbf{personal:} personal interest 1, personal interest 2, personal interest 3 and personal interest 4.
+  \textbf{professional:} Programmering, Linux, Mjukvara, Nya tekniker, 
+  Paradigmer (programmering).
+  Över huvud taget att lära mig nya saker och utvecklas.\\
+\textbf{personal:} Kajak, Friluftliv, Fiske, Natur, Rustikt leverne(bushcraft), 
+Växter, Djurliv. Jag läser mycket(ljudbok) oftast fakta normalt 50+ böcker/år
 
 %----------------------------------------------------------------------------------------
 
